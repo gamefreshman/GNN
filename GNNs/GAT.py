@@ -77,6 +77,7 @@ class GAT(nn.Module):
 
 def train(epoch):
     t = time.time()
+    
     model.train()
     optimizer.zero_grad()
     output = model(features,adj)
